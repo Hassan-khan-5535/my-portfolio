@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Hassan Khan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f3798ecef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition"></div>
+
+    <!-- Ambient Glowing Background Blobs -->
+    <div class="ambient-glows">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="nav-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-text"><span>Hassan</span>Khan</a>
+                <button class="menu-btn" aria-label="Open Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <button class="close-btn" aria-label="Close Mobile Menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Grid Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="sub-title">Contact Me</h2>
+                <p class="section-desc">Have a project in mind, need a developer, or just want to connect? Reach out!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Details Cards & Socials -->
+                <div class="contact-info reveal">
+                    <h3 style="font-size: 24px; margin-bottom: 10px;">Get in Touch</h3>
+                    <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px;">I am generally open to freelance inquiries, full-time engineering collaborations, and interesting open-source contributions.</p>
+
+                    <!-- Cards -->
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Email Me</h4>
+                            <p><a href="mailto:khanhassy321@gmail.com" style="color: var(--text-muted);">khanhassy321@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Call Me</h4>
+                            <p><a href="tel:03359217458" style="color: var(--text-muted);">03359217458</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Location</h4>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div style="margin-top: 10px;">
+                        <h4 style="font-size: 16px; margin-bottom: 12px; font-weight: 600;">Connect on Socials</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/hassan-khan-se/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Hassan-khan-5535" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://x.com/@hassankhan2842" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter X">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hassan_ahmad5535/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Hassan.Khan.SE/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form Container -->
+                <div class="contact-form-container reveal">
+                    <h3 style="font-size: 24px; margin-bottom: 25px;">Send a Message</h3>
+                    
+                    <form name="submit-to-google-sheet">
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <input type="text" name="Name" class="form-input" placeholder=" " required id="form-name">
+                            <label for="form-name" class="form-label">Your Name</label>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <input type="email" name="Email" class="form-input" placeholder=" " required id="form-email">
+                            <label for="form-email" class="form-label">Your Email</label>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <textarea name="Message" class="form-input" placeholder=" " required id="form-message" rows="6"></textarea>
+                            <label for="form-message" class="form-label">Your Message</label>
+                        </div>
+
+                        <!-- Action Submit Button -->
+                        <button type="submit" class="btn btn-primary" style="border: none; width: 100%;">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Alert message placeholder -->
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Hassan Khan. All rights reserved. Crafted with passion & AI.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
