@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Khan | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f3798ecef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition"></div>
+
+    <!-- Ambient Glowing Background Blobs -->
+    <div class="ambient-glows">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <!-- Sticky Glassmorphic Navigation -->
+    <header class="nav-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-text"><span>Hassan</span>Khan</a>
+                <button class="menu-btn" aria-label="Open Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links active-tab">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="close-btn" aria-label="Close Mobile Menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-sec">
+        <div class="container">
+            <div class="hero-row">
+                <div class="hero-col-content reveal active">
+                    <span class="hero-intro">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span>Hassan Khan</span></h1>
+                    <div class="typed-role">
+                        I am a <span class="typed-text" data-roles="Software Engineer,Java Developer,UI/UX Designer,C Programmer"></span><span class="cursor">&nbsp;</span>
+                    </div>
+                    <p class="hero-desc">
+                        A Software Engineer passionate about turning complex problems into clean, scalable solutions. 
+                        I bridge traditional engineering excellence with cutting-edge AI to build smarter, faster, and more impactful software.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="portfolio.html" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-col-image reveal active">
+                    <div class="avatar-frame">
+                        <img src="images/user.png" alt="Hassan Khan Avatar">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestones Quick Stats -->
+            <div class="quick-stats reveal active">
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Years of Dev Focus</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Teaser Section -->
+    <section class="featured-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="sub-title">Featured Work</h2>
+                <p class="section-desc">A brief showcase of some key software products and game projects I have built.</p>
+            </div>
+            
+            <div class="portfolio-grid reveal">
+                <!-- Project 1 Teaser -->
+                <div class="portfolio-item" onclick="window.location.href='portfolio.html'" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="images/work-1.png" alt="Social Media App">
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Web Application</span>
+                        <h3>Social Media App</h3>
+                        <p>A dynamic, high-engagement connection platform designed for real-time networking.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 Teaser -->
+                <div class="portfolio-item" onclick="window.location.href='portfolio.html'" data-category="games">
+                    <div class="portfolio-img">
+                        <img src="images/work-3.png" alt="Intelligent Reversi Game">
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">AI / Game</span>
+                        <h3>Intelligent Reversi Game</h3>
+                        <p>A strategic board game powered by advanced decision-tree search algorithms.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">AI algorithms</span>
+                            <span class="tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;" class="reveal">
+                <a href="portfolio.html" class="btn btn-secondary">Explore All Projects <i class="fa-solid fa-list-check"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Hassan Khan. All rights reserved. Crafted with passion & AI.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
