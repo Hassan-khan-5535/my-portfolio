@@ -838,6 +838,11 @@ header nav {
     transition: transform 0.5s ease;
 }
 
+.portfolio-img img.echoagent-img {
+    object-position: top center;
+    filter: brightness(1.05) contrast(1.02);
+}
+
 .portfolio-item:hover .portfolio-img img {
     transform: scale(1.08);
 }
