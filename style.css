@@ -1365,3 +1365,53 @@ footer p {
     color: var(--accent-color-1);
     opacity: 0.9;
 }
+
+/* Skills Section Animations */
+@keyframes skill-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills-category-list .skill-category {
+    opacity: 0;
+    animation: skill-entrance 0.5s ease forwards;
+}
+
+/* Staggered entrance for categories */
+.skills-category-list .skill-category:nth-child(1) { animation-delay: 0.1s; }
+.skills-category-list .skill-category:nth-child(2) { animation-delay: 0.2s; }
+.skills-category-list .skill-category:nth-child(3) { animation-delay: 0.3s; }
+.skills-category-list .skill-category:nth-child(4) { animation-delay: 0.4s; }
+.skills-category-list .skill-category:nth-child(5) { animation-delay: 0.5s; }
+.skills-category-list .skill-category:nth-child(6) { animation-delay: 0.6s; }
+.skills-category-list .skill-category:nth-child(7) { animation-delay: 0.7s; }
+
+/* Tag Hover Effect in Skills */
+.skills-category-list .tag {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, background 0.3s ease;
+}
+
+.skills-category-list .tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-glow);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    cursor: default;
+}
+
+/* Accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .skills-category-list .skill-category {
+        animation: none;
+        opacity: 1;
+    }
+    .skills-category-list .tag:hover {
+        transform: none;
+    }
+}
